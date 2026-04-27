@@ -2,11 +2,11 @@
 	"servers": {
 		"my-mcp-server-f38ba20e": {
 			"url": "https://api.githubcopilot.com/mcp/",
-			"type": "http"
+			"type": "http",
+            "headers": {
+                "Authorization": "Bearer ${input:github_token}"
+            }
 		}
-	},
-    "headers": {
-		"Authorization": "Bearer ${input:github_token}"
 	},
 	"inputs": [
 		{
