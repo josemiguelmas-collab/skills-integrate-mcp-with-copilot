@@ -5,6 +5,9 @@
 			"type": "http"
 		}
 	},
+    "headers": {
+		"Authorization": "Bearer ${input:github_token}"
+	},
 	"inputs": [
 		{
 			"id": "github_token",
